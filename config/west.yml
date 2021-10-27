@@ -1,11 +1,11 @@
-manifest:
+ manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: mrninhvn
+      url-base: https://github.com/mrninhvn
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: mrninhvn
+      revision: mikoto
       import: app/west.yml
   self:
     path: config
