@@ -1,6 +1,6 @@
 on: [push, pull_request, workflow_dispatch]
 
-name: Build ZMK nice!nano Corne
+name: Build ZMK mikoto_520 Corne
 
 jobs:
   build:
