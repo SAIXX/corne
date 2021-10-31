@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: zmkfirmware/zmk-build-arm:2.5
-    name: Build ZMK nice!nano Corne
+    name: Build ZMK  mikoto_520  Corne
     steps:
       - name: Checkout
         uses: actions/checkout@v2
