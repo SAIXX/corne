@@ -1,10 +1,10 @@
  manifest:
   remotes:
-    - name: mrninhvn
-      url-base: https://github.com/mrninhvn
+    - name: SAIXX
+      url-base: https://github.com/SAIXX
   projects:
     - name: zmk
-      remote: mrninhvn
+      remote: SAIXX
       revision: mikoto
       import: app/west.yml
   self:
