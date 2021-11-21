@@ -54,8 +54,8 @@ jobs:
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 corne_right_mikoto_520.uf2
-      - name: Archive (CorneF Right)
+      - name: Archive (Corne Right)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: mini_right_mikoto_520.uf2
+          path: corne_right_mikoto_520.uf2
