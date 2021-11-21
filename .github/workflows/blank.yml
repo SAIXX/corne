@@ -34,10 +34,10 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (Corne Left)
-        run: west build -s zmk/app -b Mikoto-- -DSHIELD=corne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b mikoto -- -DSHIELD=corne_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Corne DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/Mikoto.dts.pre.tmp
+        run: cat -n build/zephyr/mikoto.dts.pre.tmp
       - name: Corne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
@@ -48,7 +48,7 @@ jobs:
           name: firmware
           path: corne_left_mikoto.uf2
       - name: West Build (Corne Right)
-        run: west build --pristine -s zmk/app -b Mikoto -- -DSHIELD=corne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b mikoto -- -DSHIELD=corne_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Corne Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
