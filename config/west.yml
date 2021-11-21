@@ -1,6 +1,6 @@
  manifest:
   remotes:
-    - name: zmkfirmware
+    - name: SAIXX
       url-base: https://github.com/SAIXX
   projects:
     - name: zmk
