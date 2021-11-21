@@ -1,10 +1,10 @@
  manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/SAIXX
   projects:
     - name: zmk
-      remote:  zmkfirmware
+      remote:  SAIXX
       revision: main
       import: app/west.yml
   self:
